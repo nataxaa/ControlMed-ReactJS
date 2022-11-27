@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FirstPage } from "./pages/FirstPage";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { ConsultaPage } from "./pages/ConsultaPage";
+import { FichaPessoal } from "./pages/FichaPessoal";
+import { InfoComplete } from "./pages/InfoComplete";
+import { HistoricoMedico } from "./pages/HistoricoMedico";
+import { Exames } from "./pages/Exames";
+import { Consultas } from "./pages/Consultas";
+import { Contrarreferencia } from "./pages/Contrarreferencia";
+import { PlanoTerapeutico } from "./pages/PlanoTerapeutico";
+import { SolitarExame } from "./pages/SolitarExame";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<FirstPage/>}/>
+          <Route path="/consultaPaciente" element={<ConsultaPage/>}/>
+          <Route path="/FichaPessoal" element={<FichaPessoal/>}/>
+          <Route path="/FichaCompleta" element={<InfoComplete/>}/>
+          <Route path="/HistoricoMedico" element={<HistoricoMedico/>}/>
+          <Route path="/Exames/:name" element={<Exames/>}/>
+          <Route path="/Consulta/:name" element={<Consultas/>}/>
+          <Route path="/Contrarreferencia" element={<Contrarreferencia/>}/>
+          <Route path="/PlanoTerapeutico" element={<PlanoTerapeutico/>}/>
+          <Route path="/SolicitarExame" element={<SolitarExame/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
