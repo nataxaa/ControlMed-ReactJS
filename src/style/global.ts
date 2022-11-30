@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-  background-color: #000 ;
+  background-color: #016530 ;
   font-family: 'Jost', sans-serif;
   h1{
     color: var(--h1-color) ;

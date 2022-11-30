@@ -9,6 +9,8 @@ import { Consultas } from "./pages/Consultas";
 import { Contrarreferencia } from "./pages/Contrarreferencia";
 import { PlanoTerapeutico } from "./pages/PlanoTerapeutico";
 import { SolitarExame } from "./pages/SolitarExame";
+import { CadastrarUser } from "./pages/CadastrarUser";
+import { CadastrarUser2 } from "./pages/CadastrarUser2";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/Contrarreferencia" element={<Contrarreferencia/>}/>
           <Route path="/PlanoTerapeutico" element={<PlanoTerapeutico/>}/>
           <Route path="/SolicitarExame" element={<SolitarExame/>}/>
+          <Route path="/CadastroUser" element={<CadastrarUser/>}/>
+          <Route path="/CadastroUser2" element={<CadastrarUser2/>}/>
         </Routes>
       </Router>
     </div>
