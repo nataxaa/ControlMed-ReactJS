@@ -53,6 +53,11 @@ export const Container = styled.div`
                 opacity:0.9 ;
             }
         }
+
+        .link-cadastro{
+            margin-top:20px ;
+            font-size:15px ;
+        }
     }
 
     

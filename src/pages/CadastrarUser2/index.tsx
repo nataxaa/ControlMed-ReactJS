@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container } from "./style";
 import img from '../../assets/logo.png'
+import { Link } from "react-router-dom";
 
 export function CadastrarUser2(){
 
@@ -80,7 +81,9 @@ export function CadastrarUser2(){
             onChange={(e)=>setUbs(e.target.value)}
             />
             
+            <Link to={'/FichaPessoal'}>
             <button>Confirmar</button>
+            </Link>
 
             </form>
 

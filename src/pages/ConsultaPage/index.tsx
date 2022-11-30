@@ -27,6 +27,7 @@ export function ConsultaPage(){
                             </button>
                         </Link>
                 </div>
+                <Link className="link-cadastro" to={'/CadastroUser'}>Fazer Cadastro.</Link>
             </form>
             <footer>
 
