@@ -1,9 +1,18 @@
 import { Container } from "./style";
 import image from '../../assets/footer-pencil.png'
 import { Footer } from "../../components/footer";
+import { useState } from "react";
 
 
 export function PlanoTerapeutico(){
+
+    const [queixaPrincipal, setQueixaPrincipal] = useState<string>()
+    const [descriConduta, setDescriConduta] = useState<string>()
+    const [pacienteAmbulancia, setPacienteAmbulancia] = useState<string>()
+    const [tempoRetorno, seTempoRetorno] = useState<string>()
+    
+    
+
     return(
         <Container>
             <h1>Plano Terapêutico</h1>
