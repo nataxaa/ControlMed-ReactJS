@@ -45,6 +45,7 @@ export const Container = styled.div`
         color:#FFF ;
         border:none ;
         border-radius:5px ;
+        margin-top:1rem ;
         margin-bottom:2rem ;
         cursor: pointer;
         :hover{
